@@ -60,7 +60,7 @@ return [
     |
     */
 
-    'layout_topnav' => true,
+    'layout_topnav' => false,
     'layout_boxed' => null,
     'layout_fixed_sidebar' => null,
     'layout_light_sidebar' => null,
@@ -161,7 +161,23 @@ return [
                 ]
             ],
         ],
-
+        [
+            'text' => 'Prueba',
+            'url' => '#',
+            'icon' => 'ti ti-help',
+            'submenu' => [
+                [
+                    'text' => 'Producto',
+                    'url' => '/products',
+                    'icon' => 'ti ti-article'
+                ],
+                [
+                    'text' => 'Registro',
+                    'url' => '#',
+                    'icon' => 'ti ti-article'
+                ]
+            ],
+        ],
     ],
 
     /*
