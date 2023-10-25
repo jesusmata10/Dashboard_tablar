@@ -19,7 +19,7 @@
                     </h2>
                 </div>
                 <!-- Page title actions -->
-                <div class="col-12 col-md-auto ms-auto d-print-none">
+                <div class="col-12 col-md-auto col-xs-12 sm-auto d-print-none">
                     <div class="btn-list">
                         <a href="{{ route('products.create') }}" class="btn btn-primary d-none d-sm-inline-block">
                             <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
@@ -114,11 +114,21 @@
                                                     <div class="dropdown-menu dropdown-menu-end">
                                                         <a class="dropdown-item"
                                                            href="{{ route('products.show',$product->id) }}">
-                                                            Ver
+                                                           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                                                            <path d="M11.102 17.957c-3.204 -.307 -5.904 -2.294 -8.102 -5.957c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6a19.5 19.5 0 0 1 -.663 1.032"></path>
+                                                            <path d="M15 19l2 2l4 -4"></path>
+                                                         </svg>
+                                                           Ver
                                                         </a>
-                                                        <a class="dropdown-item text-primary"
+                                                        <a class="dropdown-item"
                                                            href="{{ route('products.edit',$product->id) }}">
-                                                            Editar
+                                                           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                            <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+                                                            <path d="M13.5 6.5l4 4"></path>
+                                                         </svg>  Editar
                                                         </a>
                                                         <form
                                                             action="{{ route('products.destroy',$product->id) }}"
@@ -129,6 +139,14 @@
                                                                     onclick="if(!confirm('Do you Want to Proceed?')){return false;}"
                                                                     class="dropdown-item text-red"><i
                                                                     class="fa fa-fw fa-trash"></i>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                        <path d="M4 7l16 0"></path>
+                                                                        <path d="M10 11l0 6"></path>
+                                                                        <path d="M14 11l0 6"></path>
+                                                                        <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+                                                                        <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+                                                                    </svg>
                                                                 Eliminar
                                                             </button>
                                                         </form>

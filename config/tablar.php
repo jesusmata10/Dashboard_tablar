@@ -62,12 +62,12 @@ return [
 
     'layout_topnav' => false,
     'layout_boxed' => null,
-    'layout_fixed_sidebar' => null,
+    'layout_fixed_sidebar' => false,
     'layout_light_sidebar' => null,
     'layout_fixed_navbar' => null,
     'layout_fixed_footer' => null,
     'layout_dark_mode' => null,
-    'layout_class' => 'default', //layout-fluid, layout-boxed, default is also available
+    'layout_class' => 'defaul', //layout-fluid, layout-boxed, default is also available
 
     /*
     |--------------------------------------------------------------------------
